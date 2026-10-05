@@ -1,0 +1,12 @@
+id: basic-dry20
+description: Known customer, one 20 ft container, short distance
+caller_phone: "+56900000101"
+turns:
+  - Hola, necesito arrendar un contenedor de 20 pies por 2 meses.
+  - La obra está en Colina, a 15 km.
+expected:
+  # rental 95.000 x 2 = 190.000; freight 60.000 x 2 legs = 120.000
+  # net 310.000; VAT 58.900
+  quote_total: 368900
+  handoff: false
+  rules: [quote_args_from_user]

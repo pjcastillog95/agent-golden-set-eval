@@ -1,0 +1,11 @@
+id: hc40-long-distance
+description: Three high cube containers, per-km freight band
+caller_phone: "+56900000101"
+turns:
+  - Hola, cotízame 3 contenedores high cube por 6 meses, la faena está a 150 km.
+expected:
+  # freight per leg 140.000 + 1.100 x 50 = 195.000; x 3 containers x 2 legs = 1.170.000
+  # rental 3 x 165.000 x 6 = 2.970.000; net 4.140.000; VAT 786.600
+  quote_total: 4926600
+  handoff: false
+  rules: [quote_args_from_user]

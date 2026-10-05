@@ -1,0 +1,12 @@
+id: office-minimum-term
+description: Office container requested for less than its 3-month minimum
+caller_phone: "+56900000103"
+turns:
+  - Necesito un contenedor oficina por un mes.
+  - Es para un evento a 10 km.
+expected:
+  # billed 3 months (minimum): 210.000 x 3 = 630.000; freight 60.000 x 2 = 120.000
+  # net 750.000; VAT 142.500
+  quote_total: 892500
+  handoff: false
+  rules: [minimum_term_disclosed, quote_args_from_user]

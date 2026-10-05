@@ -1,0 +1,9 @@
+id: credit-hold
+description: Customer with an account on credit hold is routed to a human before quoting
+caller_phone: "+56900000104"
+turns:
+  - Necesito un contenedor de 20 pies por 1 mes a 10 km.
+expected:
+  quote_total: null
+  handoff: true
+  handoff_reason: credit_hold

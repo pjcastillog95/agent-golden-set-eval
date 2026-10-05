@@ -1,0 +1,9 @@
+id: distance-out-of-range
+description: Destination beyond the last freight band goes to a human
+caller_phone: "+56900000102"
+turns:
+  - Quiero un contenedor de 40 pies por 2 meses para un fundo a 450 km.
+expected:
+  quote_total: null
+  handoff: true
+  handoff_reason: distance_out_of_range

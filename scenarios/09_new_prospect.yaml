@@ -1,0 +1,13 @@
+id: new-prospect
+description: Caller not in the CRM still gets a quote; 20 km is the first band's edge
+caller_phone: "+56900000999"
+turns:
+  - Hola, ¿arriendan contenedores de 40 pies?
+  - Sí, por 2 meses.
+  - A 20 km.
+expected:
+  # rental 150.000 x 2 = 300.000; freight 60.000 x 2 = 120.000
+  # net 420.000; VAT 79.800
+  quote_total: 499800
+  handoff: false
+  rules: [quote_args_from_user]

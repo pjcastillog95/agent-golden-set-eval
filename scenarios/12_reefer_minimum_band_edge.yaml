@@ -1,0 +1,11 @@
+id: reefer-minimum-band-edge
+description: Reefer below its 2-month minimum, at exactly 100 km
+caller_phone: "+56900000102"
+turns:
+  - Un contenedor refrigerado por un mes, a 100 km.
+expected:
+  # billed 2 months: 320.000 x 2 = 640.000; freight 140.000 x 2 = 280.000
+  # net 920.000; VAT 174.800
+  quote_total: 1094800
+  handoff: false
+  rules: [minimum_term_disclosed, quote_args_from_user]

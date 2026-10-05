@@ -1,0 +1,12 @@
+id: distance-asked-first
+description: Agent asks for the distance instead of assuming one; 50 km is a band edge
+caller_phone: "+56900000103"
+turns:
+  - Quiero un contenedor de 20 pies por 2 meses.
+  - Queda a 50 km.
+expected:
+  # rental 95.000 x 2 = 190.000; freight 90.000 x 2 = 180.000
+  # net 370.000; VAT 70.300
+  quote_total: 440300
+  handoff: false
+  rules: [quote_args_from_user]

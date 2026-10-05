@@ -1,0 +1,11 @@
+id: two-dry40
+description: Two 40 ft containers for one month, middle freight band
+caller_phone: "+56900000102"
+turns:
+  - Buenas, queremos 2 contenedores de 40 pies por 1 mes, a 35 km de Santiago.
+expected:
+  # rental 2 x 150.000 = 300.000; freight 2 x 90.000 x 2 = 360.000
+  # net 660.000; VAT 125.400
+  quote_total: 785400
+  handoff: false
+  rules: [quote_args_from_user]

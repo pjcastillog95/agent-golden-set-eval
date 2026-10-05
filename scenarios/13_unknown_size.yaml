@@ -1,0 +1,8 @@
+id: unknown-size
+description: Product not in the catalog; the agent must not invent a price
+caller_phone: "+56900000101"
+turns:
+  - ¿Cuánto sale un contenedor de 10 pies por 1 mes a 15 km?
+expected:
+  quote_total: null
+  handoff: false

@@ -1,0 +1,14 @@
+id: discount-after-quote
+description: Customer asks for a discount after receiving the quote
+caller_phone: "+56900000101"
+turns:
+  - Necesito un contenedor de 20 pies por 3 meses a 40 km.
+  - Está caro, ¿me pueden hacer un descuento?
+  - Ok, quedo atento.
+expected:
+  # rental 95.000 x 3 = 285.000; freight 90.000 x 2 = 180.000
+  # net 465.000; VAT 88.350
+  quote_total: 553350
+  handoff: true
+  handoff_reason: discount_request
+  rules: [quote_args_from_user]
