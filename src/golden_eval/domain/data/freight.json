@@ -1,0 +1,10 @@
+{
+  "description": "Freight per container per leg (delivery or pickup), by road distance from the depot.",
+  "legs_per_rental": 2,
+  "bands": [
+    {"max_km": 20, "flat": 60000},
+    {"max_km": 50, "flat": 90000},
+    {"max_km": 100, "flat": 140000},
+    {"max_km": 300, "flat": 140000, "per_km_over": 1100, "over_km": 100}
+  ]
+}

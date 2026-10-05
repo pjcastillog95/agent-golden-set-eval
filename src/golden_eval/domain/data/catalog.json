@@ -1,0 +1,12 @@
+{
+  "currency": "CLP",
+  "vat_rate": 0.19,
+  "max_containers_per_quote": 10,
+  "products": [
+    {"id": "dry_20", "name": "20 ft standard container", "monthly_rate": 95000, "min_months": 1},
+    {"id": "dry_40", "name": "40 ft standard container", "monthly_rate": 150000, "min_months": 1},
+    {"id": "hc_40", "name": "40 ft high cube container", "monthly_rate": 165000, "min_months": 1},
+    {"id": "office_20", "name": "20 ft office container", "monthly_rate": 210000, "min_months": 3},
+    {"id": "reefer_20", "name": "20 ft refrigerated container", "monthly_rate": 320000, "min_months": 2}
+  ]
+}

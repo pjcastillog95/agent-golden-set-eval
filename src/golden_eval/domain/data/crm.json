@@ -1,0 +1,8 @@
+{
+  "customers": [
+    {"id": "C-1001", "name": "Constructora Los Aromos", "phone": "+56900000101", "status": "active"},
+    {"id": "C-1002", "name": "Agrícola Valle Verde", "phone": "+56900000102", "status": "active"},
+    {"id": "C-1003", "name": "Eventos Pacífico", "phone": "+56900000103", "status": "active"},
+    {"id": "C-1004", "name": "Minera Cerro Gris", "phone": "+56900000104", "status": "credit_hold"}
+  ]
+}
